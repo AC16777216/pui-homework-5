@@ -26,21 +26,23 @@
 
 	<div class="container">
 		<div class="cart-wrapper">
-			<div class="cart-item">
-				<div>
-					<img class="product-image" src="images/products/original-cinnamon-roll.jpg">
-					<p class="remove">Remove</p>
-				</div>
-				<div class="item-detail">
-					<p>Original Cinnamon Roll</p>
-					<p>Glazing: Keep original</p>
-					<p>Pack Size: 1</p>
-				</div>
-				<div class="item-price">
-					<p>$ 2.49</p>
-				</div>
-			</div>
-			<div class="cart-item">
+			<template class="cart-item-template">
+				<div class="cart-item">
+					<div>
+						<img class="product-image" src="images/products/original-cinnamon-roll.jpg">
+						<p class="remove">Remove</p>
+					</div>
+					<div class="item-detail">
+						<p id="detail-name">Original Cinnamon Roll</p>
+						<p id="detail-glaze">Glazing: Keep original</p>
+						<p id="detail-size">Pack Size: 1</p>
+					</div>
+					<div class="item-price">
+						<p>$ 2.49</p>
+					</div>
+				</div> <!-- END cart-item -->
+			</template> <!-- END cart-item-template-->
+			<!--<div class="cart-item">
 				<div>
 					<img class="product-image" src="images/products/double-chocolate-cinnamon-roll.jpg">
 					<p class="remove">Remove</p>
@@ -53,7 +55,7 @@
 				<div class="item-price">
 					<p>$ 27.45</p>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="checkout-info">
 			<div class="whitespace"></div>
